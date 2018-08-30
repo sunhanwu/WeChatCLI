@@ -1,5 +1,9 @@
 # itchat API 中文
 
+[TOC]
+
+## login 函数
+
 ```python
 def login(self, enableCmdQR=False, picDir=None, qrCallback=None,
         loginCallback=None, exitCallback=None):
@@ -31,5 +35,22 @@ def login(self, enableCmdQR=False, picDir=None, qrCallback=None,
     raise NotImplementedError()
 ```
 
+## search_mps 函数
 
+```python
+def search_mps(self, name=None, userName=None):
+    return self.storageClass.search_mps(name, userName)
+```
 
+1. 函数功能：搜索公众号
+
+2. 参数列表“
+
+   + name: 获取公众号名名称中含有”name“的公众号
+   + userName:获取公众号名名称为”name“的公众号
+
+3. 返回值：
+
+   self.storageClass.search_mps（name.userName）
+
+##
